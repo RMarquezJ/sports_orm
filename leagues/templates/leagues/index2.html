@@ -6,90 +6,90 @@
 	</head>
 	<body class="bg-dark">
     <div class="text-success">
-      <h1>Baseball Leagues</h1>
+      <h1>Teams in atlantic city conference</h1>
 		<ol>
-			{% for elements in baseball %}
-				<li>{{elements.name}}</li>
+			{% for elements in atlanticcityconf %}
+				<li>{{elements.location}}'s {{elements.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-warning">
-      <h1>Women's Leagues</h1>
+      <h1>Boston's Penguins Team players</h1>
 		<ol>
-			{% for elements in women %}
-				<li>{{elements.name}}</li>
+			{% for elements in bospenplayers %}
+				<li>{{elements.first_name}} {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-danger">
-      <h1>Hockey Leagues</h1>
+      <h1>International Collegiate Baseball Conference Players</h1>
 		<ol>
-			{% for elements in hockey %}
-				<li>{{elements.name}}</li>
+			{% for elements in intcolbasecon %}
+				<li>{{elements.first_name}} {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-info">
-      <h1>Non football Leagues</h1>
+      <h1>American Conference of Amateur Football named Lopez players</h1>
 		<ol>
-			{% for elements in notfootball %}
-				<li>{{elements.name}}</li>
+			{% for elements in lopezfootballplayer %}
+				<li>{{elements.first_name}} {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-light">
-      <h1>Conference Leagues</h1>
+      <h1>Football leagues players</h1>
 		<ol>
-			{% for elements in conference %}
-				<li>{{elements.name}}</li>
+			{% for elements in footballplayers %}
+				<li>{{elements.first_name}} {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-primary">
-      <h1>Atlantic Leagues</h1>
+      <h1>All teams with players named Sophia</h1>
 		<ol>
-			{% for elements in atlantic %}
-				<li>{{elements.name}}</li>
+			{% for elements in sophiaplayer %}
+				<li>{{elements.location}}'s {{elements.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-success">
-      <h1>Teams from Dallas</h1>
+      <h1>All leagues with players named Sophia</h1>
 		<ol>
-			{% for elements in dallasteams %}
-				<li>{{elements.team_name}}</li>
+			{% for elements in sophialeagueplayer %}
+				<li>{{elements.name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-warning">
-      <h1>Teams named Raptors</h1>
+      <h1>All players with Flores as last name excludion those playing in the Washington Roughriders</h1>
 		<ol>
-			{% for elements in raptors %}
-				<li>{{elements.location}}'s {{elements.team_name}}</li>
+			{% for elements in floresnot %}
+				<li>{{elements.first_name}}'s {{elements.last_name}} player of {{elements.curr_team.location}} {{elements.curr_team.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-danger">
-      <h1>Teams containing from a location containing "city"</h1>
+      <h1>Teams in which player Samuel Evans plays or has played</h1>
 		<ol>
-			{% for elements in city %}
-				<li>{{elements.location}}'s {{elements.team_name}}</li>
+			{% for elements in samuelevansteams %}
+				<li>{{elements.location}} {{elements.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-info">
-      <h1>Teams with names starting with T</h1>
+      <h1>Actual or former players for Manitoba Tiger-Cats</h1>
 		<ol>
-			{% for elements in tfirst %}
-				<li>{{elements.location}}'s {{elements.team_name}}</li>
+			{% for elements in tigercats %}
+				<li>{{elements.first_name}}'s {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-light">
-      <h1>Teams ordered alphabetically by location</h1>
+      <h1>Former players from Wichita Vikings</h1>
 		<ol>
-			{% for elements in orderbylocation %}
-				<li>{{elements.location}}'s {{elements.team_name}}</li>
+			{% for elements in formerwichitavikings %}
+				<li>{{elements.first_name}}'s {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
