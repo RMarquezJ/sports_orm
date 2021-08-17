@@ -94,42 +94,34 @@
 		</ol>
     </div>
     <div class="text-primary">
-      <h1>Teams ordered alphabetically reversed by name</h1>
+      <h1>Teams for which Jacbob Gray has played before joining Oregon Colts</h1>
 		<ol>
-			{% for elements in orderbyname %}
+			{% for elements in formerteamsjacobgray %}
 				<li>{{elements.location}}'s {{elements.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-success">
-      <h1>Players with Cooper as last name</h1>
+      <h1>All players named Joshua who ever played in the Atlantic Federetion of Amateur Baseball</h1>
 		<ol>
-			{% for elements in playercooper %}
+			{% for elements in joshuabaseleague %}
 				<li>{{elements.first_name}} {{elements.last_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-warning">
-      <h1>Players named Joshua</h1>
+      <h1>All teams with more than 12 players</h1>
 		<ol>
-			{% for elements in playerjoshua %}
-				<li>{{elements.first_name}} {{elements.last_name}}</li>
+			{% for elements in twelveplayers %}
+				<li>{{elements.location}}'s' {{elements.team_name}}</li>
 			{% endfor %}
 		</ol>
     </div>
     <div class="text-danger">
-      <h1>Players with Cooper as last name, except those named Joshua</h1>
+      <h1>All Players and the number of teams for which they'd played </h1>
 		<ol>
-			{% for elements in cooperbutnotjoshua %}
-				<li>{{elements.first_name}} {{elements.last_name}}</li>
-			{% endfor %}
-		</ol>
-    </div>
-    <div class="text-info">
-      <h1>Players named Alexander or Wyatt</h1>
-		<ol>
-			{% for elements in alexanderorwyatt %}
-				<li>{{elements.first_name}} {{elements.last_name}}</li>
+			{% for elements in allplayers %}
+				<li>{{elements.first_name}} {{elements.last_name}} has played for {{elements.all_teams__count}} teams</li>
 			{% endfor %}
 		</ol>
     </div>
